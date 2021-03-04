@@ -2,7 +2,7 @@ import java.util.*;
 
 public class SlideYourTile
 {
-	public static void Display(int [][]x)
+	public void Display(int [][]x)
 	{
 		int flag = 0;
 		for(int i=0;i<x.length;i++)
@@ -33,7 +33,7 @@ public class SlideYourTile
 			System.out.println("Success!! You win");
 	}
 	
-	public static void Initialize(int [][] x)
+	public void Initialize(int [][] x)
 	{
 		for(int i=0;i<x.length;i++)
 		{
@@ -44,7 +44,7 @@ public class SlideYourTile
 		}
 	}
 	
-	public static void MoveUp(int [][]x, int m, int n)
+	public void MoveUp(int [][]x, int m, int n)
 	{
 		int c = 0;
 		for(int i=0;i<3;i++)
@@ -60,7 +60,7 @@ public class SlideYourTile
 		}
 	}
 	
-	public static void MoveDown(int [][]x, int m, int n)
+	public void MoveDown(int [][]x, int m, int n)
 	{
 		int c = 0;
 		for(int i=0;i<3;i++)
@@ -76,7 +76,7 @@ public class SlideYourTile
 		}
 	}
 	
-	public static void MoveRight(int [][]x, int m, int n)
+	public void MoveRight(int [][]x, int m, int n)
 	{
 		int c = 0;
 		for(int i=0;i<3;i++)
@@ -92,7 +92,7 @@ public class SlideYourTile
 		}
 	}
 	
-	public static void MoveLeft(int [][]x, int m, int n)
+	public void MoveLeft(int [][]x, int m, int n)
 	{
 		int c = 0;
 		for(int i=0;i<3;i++)
@@ -108,7 +108,7 @@ public class SlideYourTile
 		}
 	}
 	
-	public static void main(String[] args) 
+	public void main(String[] args) 
 	{
 		int x[][] = new int[3][3];
 		Random rand = new Random();
